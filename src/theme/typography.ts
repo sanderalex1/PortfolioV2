@@ -1,14 +1,18 @@
-import type { TypographyVariantsOptions } from "@mui/material";
+import type { TypographyVariantsOptions } from "@mui/material/styles";
+
+const fraunces = (fontWeight: number) => ({
+  fontFamily: '"Fraunces", "Times New Roman", serif',
+  fontWeight,
+  fontVariationSettings: '"SOFT" 50, "WONK" 1',
+});
 
 export const typography: TypographyVariantsOptions = {
-  fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
-  h1: { fontSize: "2.5rem", fontWeight: 700 },
-  h2: { fontSize: "2rem", fontWeight: 700 },
-  h3: { fontSize: "1.75rem", fontWeight: 600 },
-  h4: { fontSize: "1.5rem", fontWeight: 600 },
-  h5: { fontSize: "1.25rem", fontWeight: 500 },
-  h6: { fontSize: "1rem", fontWeight: 500 },
-  body1: { fontSize: "1rem", lineHeight: 1.6 },
-  body2: { fontSize: "0.875rem", lineHeight: 1.6 },
+  fontFamily: '"Inter", ui-sans-serif, system-ui, sans-serif',
+  h1: fraunces(700),
+  h2: fraunces(700),
+  h3: fraunces(600),
+  h4: fraunces(600),
+  h5: fraunces(500),
+  h6: { fontWeight: 500 },
   button: { textTransform: "none", fontWeight: 600 },
 };

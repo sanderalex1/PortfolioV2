@@ -2,28 +2,17 @@ import type { Components, Theme } from "@mui/material/styles";
 
 export const components: Components<Theme> = {
   MuiButton: {
-    defaultProps: {
-      disableElevation: true,
-    },
+    defaultProps: { disableElevation: true },
     styleOverrides: {
-      root: {
-        borderRadius: 8,
-        padding: "8px 20px",
-      },
+      root: { borderRadius: 4 },
     },
   },
   MuiCard: {
     styleOverrides: {
-      root: {
-        borderRadius: 12,
-        boxShadow: "0px 2px 8px rgba(0,0,0,0.08)",
-      },
+      root: { borderRadius: 4 },
     },
   },
   MuiTextField: {
-    defaultProps: {
-      variant: "outlined",
-      size: "small",
-    },
+    defaultProps: { variant: "outlined", size: "small" },
   },
 };

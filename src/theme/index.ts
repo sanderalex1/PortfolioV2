@@ -11,5 +11,5 @@ export const createAppTheme = (mode: PaletteMode) =>
     typography,
     breakpoints,
     components,
-    shape: { borderRadius: 8 },
+    shape: { borderRadius: 4 },
   });
