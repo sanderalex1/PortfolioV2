@@ -4,4 +4,5 @@ export type Hero = {
   intro: string;
   primaryCta: { label: string; href: string };
   secondaryCta: { label: string; href: string };
+  availability: string;
 };

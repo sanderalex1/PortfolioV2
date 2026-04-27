@@ -9,11 +9,12 @@ const fraunces = (fontWeight: number, italic = false) => ({
 
 export const typography: TypographyVariantsOptions = {
   fontFamily: '"Inter", ui-sans-serif, system-ui, sans-serif',
-  h1: fraunces(700),
+  h1: fraunces(200, true),
   h2: fraunces(700),
   h3: fraunces(600),
   h4: fraunces(600),
   h5: fraunces(500),
   h6: fraunces(400, true),
+  body1: { fontWeight: 500 },
   button: { textTransform: "none", fontWeight: 600 },
 };

@@ -17,23 +17,22 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const appBarStyle = {
+    background: (theme) =>
+      theme.palette.mode === "light"
+        ? `rgba(251, 249, 245, ${opacity})`
+        : `rgba(15, 11, 9, ${opacity})`,
+    backdropFilter: `blur(${opacity * 12}px)`,
+    WebkitBackdropFilter: `blur(${opacity * 12}px)`,
+    boxShadow: "none",
+    borderBottom: "1px solid",
+    borderColor: scrolled ? "divider" : "transparent",
+    transition: "border-color 0.3s ease",
+    pt: 2,
+  };
+
   return (
-    <AppBar
-      position="fixed"
-      sx={{
-        background: (theme) =>
-          theme.palette.mode === "light"
-            ? `rgba(251, 249, 245, ${opacity})`
-            : `rgba(15, 11, 9, ${opacity})`,
-        backdropFilter: `blur(${opacity * 12}px)`,
-        WebkitBackdropFilter: `blur(${opacity * 12}px)`,
-        boxShadow: "none",
-        borderBottom: "1px solid",
-        borderColor: scrolled ? "divider" : "transparent",
-        transition: "border-color 0.3s ease",
-        pt: 2,
-      }}
-    >
+    <AppBar position="fixed" sx={appBarStyle}>
       <Container maxWidth="lg">
         <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
           <Typography variant="h6">
@@ -47,10 +46,10 @@ const Navbar = () => {
               <Typography
                 variant="body2"
                 sx={{
-                  color: (theme) => theme.palette.text.secondary,
+                  color: "text.secondary",
                   fontWeight: "500",
                   cursor: "pointer",
-                  "&:hover": { color: (theme) => theme.palette.text.primary },
+                  "&:hover": { color: "text.primary" },
                 }}
               >
                 {c.label}
