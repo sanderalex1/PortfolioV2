@@ -4,7 +4,7 @@ export const getPalette = (mode: PaletteMode): PaletteOptions => ({
   mode,
   primary: {
     main: mode === "light" ? "hsl(20, 14%, 8%)" : "hsl(40, 20%, 96%)",
-    contrastText: mode === "light" ? "hsl(40, 20%, 98%)" : "hsl(20, 14%, 6%)",
+    contrastText: mode === "light" ? "hsl(20, 14%, 6%)" : "hsl(40, 20%, 98%)",
   },
   secondary: {
     main: mode === "light" ? "hsl(40, 15%, 94%)" : "hsl(24, 10%, 12%)",

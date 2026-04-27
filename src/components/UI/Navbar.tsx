@@ -1,16 +1,66 @@
-import { AppBar, Box, Typography } from "@mui/material";
+import { AppBar, Box, Container, Toolbar, Typography } from "@mui/material";
 import { ThemeToggle } from "./ToggleButton";
-
+import { useEffect, useState } from "react";
+import { nav } from "../../content";
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+  const [opacity, setOpacity] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 10);
+
+      const value = Math.min(window.scrollY / 80, 0.85);
+      setOpacity(value);
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <Box>
-      <AppBar position="sticky">
-        <Typography variant="h5">Alex</Typography>
-        <Box>
-          <ThemeToggle />
-        </Box>
-      </AppBar>
-    </Box>
+    <AppBar
+      position="fixed"
+      sx={{
+        background: (theme) =>
+          theme.palette.mode === "light"
+            ? `rgba(251, 249, 245, ${opacity})`
+            : `rgba(15, 11, 9, ${opacity})`,
+        backdropFilter: `blur(${opacity * 12}px)`,
+        WebkitBackdropFilter: `blur(${opacity * 12}px)`,
+        boxShadow: "none",
+        borderBottom: "1px solid",
+        borderColor: scrolled ? "divider" : "transparent",
+        transition: "border-color 0.3s ease",
+        pt: 2,
+      }}
+    >
+      <Container maxWidth="lg">
+        <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
+          <Typography variant="h6">
+            Alex M
+            <Box component="span" sx={{ color: "#E65E19" }}>
+              .
+            </Box>
+          </Typography>
+          <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
+            {nav.map((c) => (
+              <Typography
+                variant="body2"
+                sx={{
+                  color: (theme) => theme.palette.text.secondary,
+                  fontWeight: "500",
+                  cursor: "pointer",
+                  "&:hover": { color: (theme) => theme.palette.text.primary },
+                }}
+              >
+                {c.label}
+              </Typography>
+            ))}
+            <ThemeToggle />
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
   );
 };
 

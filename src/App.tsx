@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Header />
-      <Container maxWidth="md">
+      <Container maxWidth="lg" sx={{ height: "100vh" }}>
         <HeroSection />
         <ProjectsSection />
         <SkillsSection />
