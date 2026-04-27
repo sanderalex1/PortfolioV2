@@ -15,7 +15,7 @@ export const getPalette = (mode: PaletteMode): PaletteOptions => ({
     contrastText: mode === "light" ? "hsl(40, 20%, 98%)" : "hsl(40, 20%, 96%)",
   },
   background: {
-    default: mode === "light" ? "hsl(40, 20%, 98%)" : "hsl(20, 14%, 6%)",
+    default: mode === "light" ? "hsl(40, 20%, 98%)" : "hsl(30, 13%, 6%)",
     paper: mode === "light" ? "hsl(40, 20%, 98%)" : "hsl(20, 14%, 8%)",
   },
   text: {

@@ -1,5 +1,7 @@
+import { Box} from "@mui/material";
+
 const ProjectsSection = () => {
-  return <div>ProjectsSection</div>;
+  return <Box></Box>;
 };
 
 export default ProjectsSection;

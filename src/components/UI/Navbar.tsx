@@ -21,7 +21,7 @@ const Navbar = () => {
     background: (theme) =>
       theme.palette.mode === "light"
         ? `rgba(251, 249, 245, ${opacity})`
-        : `rgba(15, 11, 9, ${opacity})`,
+        : `rgba(17, 15, 13, ${opacity})`,
     backdropFilter: `blur(${opacity * 12}px)`,
     WebkitBackdropFilter: `blur(${opacity * 12}px)`,
     boxShadow: "none",

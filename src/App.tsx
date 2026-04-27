@@ -1,4 +1,4 @@
-import { Container } from "@mui/material";
+import { Container, Divider } from "@mui/material";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import ProjectsSection from "./components/ProjectsSection";
@@ -13,6 +13,7 @@ function App() {
       <Header />
       <Container maxWidth="lg" sx={{ height: "100vh" }}>
         <HeroSection />
+        <Divider />
         <ProjectsSection />
         <SkillsSection />
         <AboutSection />

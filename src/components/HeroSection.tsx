@@ -3,7 +3,7 @@ import { hero } from "../content";
 import PingAnimation from "./UI/PingAnimation";
 const HeroSection = () => {
   return (
-    <Box sx={{ pb: 24, pt: 40 }}>
+    <Box sx={{ pb: 24, pt: 40, minHeight: "92vh" }}>
       <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
         <PingAnimation />
         <Typography
@@ -19,12 +19,12 @@ const HeroSection = () => {
           {hero.availability}
         </Typography>
       </Box>
-      <Typography variant="h1" sx={{ display: "flex", gap: 2, mt: 4 }}>
-        {hero.firstName}
-        <Box component="span" sx={{ color: "text.secondary" }}>
+      <Box sx={{ display: "flex", gap: 2, mt: 4 }}>
+        <Typography variant="h1">{hero.firstName}</Typography>
+        <Typography variant="h1" sx={{ color: "text.secondary" }}>
           {hero.lastName}
-        </Box>
-      </Typography>
+        </Typography>
+      </Box>
       <Typography
         sx={{
           mt: 4.2,
@@ -44,7 +44,6 @@ const HeroSection = () => {
             },
           }}
         >
-          {" "}
           <Typography
             variant="body1"
             sx={{
