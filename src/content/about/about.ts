@@ -6,12 +6,13 @@ export const about: About = {
   eyebrow: "03 — About",
   title: "A developer who treats the web like a craft.",
   paragraphs: [
-    "I'm a web developer with eight years of experience building products for startups and studios across Europe. My work sits at the intersection of design and engineering — I care equally about how something feels and how it's built.",
-    "Outside of client work I write about interface craft, contribute to open source, and collect old typography books. Currently based in Lisbon, working remotely with teams worldwide.",
+    "I'm a frontend developer focused on building clean, performant web applications — where thoughtful UI meets solid engineering. My stack of choice is React and TypeScript, and I care as much about the details as the architecture.",
+
+    "When I'm not coding, I'm writing music, lifting, or deep in a competitive game with friends. Based in Kristiansund — open to remote work worldwide.",
   ],
   panel: {
     currently: "Independent — freelance & collaborations",
-    basedIn: "Lisbon, Portugal",
+    basedIn: "Kristiansund, Norway",
     toolkit: [
       "TypeScript",
       "React",

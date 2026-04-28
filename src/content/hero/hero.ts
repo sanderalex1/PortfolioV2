@@ -9,5 +9,5 @@ export const hero: Hero = {
     "I design and build fast, accessible web products with care for typography, performance, and the small details that make software feel inevitable.",
   primaryCta: { label: "View selected work", href: "#work" },
   secondaryCta: { label: "Get in touch", href: "#contact" },
-  availability: "Available for work — May 2026",
+  availability: "Available for work — Jul 2026",
 };

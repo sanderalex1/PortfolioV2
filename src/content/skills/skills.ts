@@ -12,7 +12,7 @@ export const skills: SkillsSection = {
   eyebrow: "02 — Skills",
   title: "The tools I reach for.",
   description:
-    "A focused stack I've sharpened over years of building products end-to-end.",
+    "A focused stack I've sharpened over my journey as a web-developer.",
   items: [
     { name: "JavaScript", image: javascriptIcon },
     { name: "TypeScript", image: typescriptIcon },

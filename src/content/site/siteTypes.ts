@@ -11,10 +11,7 @@ export type SocialLinks = {
 };
 
 export type SiteConfig = {
-  name: string;
-  shortName: string; // for the nav: "Jane Doe."
   email: string;
-  availability: Availability;
   social: SocialLinks;
   copyrightYear: number;
   builtYear: number;

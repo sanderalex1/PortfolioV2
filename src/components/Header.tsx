@@ -3,7 +3,7 @@ import Navbar from "./UI/Navbar";
 
 const Header = () => {
   return (
-    <Box sx={{ pt: "80px" }}>
+    <Box component="header" sx={{ pt: "80px" }}>
       <Navbar />
     </Box>
   );

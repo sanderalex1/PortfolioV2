@@ -3,17 +3,11 @@
 import type { SiteConfig } from "./siteTypes";
 
 export const site: SiteConfig = {
-  name: "Jane Doe",
-  shortName: "Jane Doe.",
-  email: "hello@janedoe.dev",
-  availability: {
-    open: true,
-    month: "May 2026",
-  },
+  email: "alex.myrhorodskyi@gmail.com",
+
   social: {
-    github: "https://github.com/janedoe",
-    linkedin: "https://linkedin.com/in/janedoe",
-    twitter: "https://twitter.com/janedoe",
+    github: "https://github.com/sanderalex1",
+    linkedin: "https://linkedin.com/in/alex-myrhorodskyi-b688711b7/",
     readcv: "https://read.cv/janedoe",
   },
   copyrightYear: 2026,

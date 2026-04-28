@@ -1,5 +1,13 @@
+import { Box, Typography } from "@mui/material";
+
 const ContactSection = () => {
-  return <div>ContactSection</div>;
+  return (
+    <Box sx={{ py: 20 }}>
+      <Typography></Typography>
+      <Typography></Typography>
+      <Box></Box>
+    </Box>
+  );
 };
 
 export default ContactSection;

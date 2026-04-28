@@ -1,4 +1,4 @@
-import { Box, Divider, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { about } from "../content";
 import CustomChip from "./UI/CustomChip";
 import { PanelRow } from "./UI/PanelRow";
