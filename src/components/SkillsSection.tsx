@@ -28,7 +28,7 @@ const SkillsSection = () => {
       >
         {skills.description}
       </Typography>
-      <Grid container sx={{ pt: 8 }}>
+      <Grid container sx={{ pt: 8, justifyContent: "center" }}>
         {skills.items.map((i) => (
           <Grid
             size={{ xs: 5, sm: 5, md: 3 }}
