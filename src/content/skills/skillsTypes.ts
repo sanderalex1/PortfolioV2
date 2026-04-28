@@ -1,12 +1,10 @@
-export type SkillLevel = "Expert" | "Advanced" | "Intermediate" | "Familiar";
-
 export type Skill = {
   name: string;
-  level: SkillLevel;
+  image: string;
 };
 
 export type SkillsSection = {
-  eyebrow: string; // "02 — SKILLS"
+  eyebrow: string;
   title: string;
   description: string;
   items: Skill[];

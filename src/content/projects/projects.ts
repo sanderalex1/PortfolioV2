@@ -43,7 +43,7 @@ export const projects: Project[] = [
     id: "memory-game",
     number: "04",
     title: "Memory Game",
-    year: 2023,
+    year: 2025,
     description:
       "A classic card-flipping memory game built with vanilla React adn JavaScript.",
     tags: ["React", "JavaScript", "Vite"],

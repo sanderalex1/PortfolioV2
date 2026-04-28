@@ -15,7 +15,9 @@ function App() {
         <HeroSection />
         <Divider />
         <ProjectsSection />
+        <Divider />
         <SkillsSection />
+        <Divider />
         <AboutSection />
         <ContactSection />
       </Container>

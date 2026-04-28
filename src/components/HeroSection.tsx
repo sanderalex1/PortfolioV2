@@ -3,7 +3,7 @@ import { hero } from "../content";
 import PingAnimation from "./UI/PingAnimation";
 const HeroSection = () => {
   return (
-    <Box sx={{ pb: 24, pt: 40, minHeight: "92vh" }}>
+    <Box sx={{ pb: 10, pt: 40, minHeight: "92vh" }}>
       <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
         <PingAnimation />
         <Typography

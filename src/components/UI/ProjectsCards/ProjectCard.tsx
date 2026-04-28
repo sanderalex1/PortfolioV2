@@ -4,11 +4,25 @@ import {
   CardActionArea,
   CardContent,
   CardMedia,
-  Chip,
   Typography,
 } from "@mui/material";
 import type { Project } from "../../../content/projects/projectsTypes";
 import CustomChip from "../CustomChip";
+
+const cardAreaStyle = {
+  height: "100%",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "stretch",
+
+  "&:hover .img": {
+    transform: "scale(1.05)",
+  },
+  "&:hover .arrow": {
+    opacity: 1,
+    transform: "translateX(4px)",
+  },
+};
 
 const ProjectCard = ({ card }: { card: Project }) => {
   return (
@@ -22,22 +36,7 @@ const ProjectCard = ({ card }: { card: Project }) => {
       }}
       key={card.id}
     >
-      <CardActionArea
-        sx={{
-          height: "100%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "stretch",
-
-          "&:hover .img": {
-            transform: "scale(1.05)",
-          },
-          "&:hover .arrow": {
-            opacity: 1,
-            transform: "translateX(4px)",
-          },
-        }}
-      >
+      <CardActionArea sx={cardAreaStyle}>
         <CardMedia
           component="img"
           height="300"
