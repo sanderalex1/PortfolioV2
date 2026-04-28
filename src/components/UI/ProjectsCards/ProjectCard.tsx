@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import type { Project } from "../../../content/projects/projectsTypes";
+import CustomChip from "../CustomChip";
 
 const ProjectCard = ({ card }: { card: Project }) => {
   return (
@@ -27,11 +28,20 @@ const ProjectCard = ({ card }: { card: Project }) => {
           display: "flex",
           flexDirection: "column",
           alignItems: "stretch",
+
+          "&:hover .img": {
+            transform: "scale(1.05)",
+          },
+          "&:hover .arrow": {
+            opacity: 1,
+            transform: "translateX(4px)",
+          },
         }}
       >
         <CardMedia
           component="img"
           height="300"
+          className="img"
           image={card.image}
           alt={card.imageAlt}
           sx={{
@@ -39,12 +49,13 @@ const ProjectCard = ({ card }: { card: Project }) => {
             border: "1px solid",
             borderColor: "divider",
             transition: "transform 0.3s ease",
-            "&:hover": {
-              transform: "scale(1.05)",
-            },
           }}
         />
-        <CardContent sx={{ flexGrow: 1 }}>
+        <CardContent
+          sx={{
+            flexGrow: 1,
+          }}
+        >
           <Box
             sx={{
               display: "flex",
@@ -58,8 +69,24 @@ const ProjectCard = ({ card }: { card: Project }) => {
               </Typography>
               <Typography variant="h5">{card.title}</Typography>
             </Box>
-            <Typography variant="body2" sx={{ color: "text.secondary" }}>
-              {card.year}
+            <Typography
+              variant="body2"
+              sx={{ color: "text.secondary", display: "flex", gap: 1 }}
+            >
+              <Box>{card.year}</Box>
+
+              <Box
+                component="span"
+                className="arrow"
+                sx={{
+                  opacity: 0,
+                  transform: "translateX(-4px)",
+                  transition: "opacity 0.2s ease, transform 0.2s ease",
+                  display: "inline-block",
+                }}
+              >
+                →
+              </Box>
             </Typography>
           </Box>
           <Typography variant="body1" sx={{ color: "text.secondary", pt: 2 }}>
@@ -74,16 +101,7 @@ const ProjectCard = ({ card }: { card: Project }) => {
             }}
           >
             {card.tags.map((t) => (
-              <Chip
-                sx={{
-                  backgroundColor: "background.default",
-                  border: "1px solid",
-                  borderColor: "divider",
-                  color: "text.secondary",
-                }}
-                key={t}
-                label={t}
-              />
+              <CustomChip key={t} label={t} />
             ))}
           </Box>
         </CardContent>
