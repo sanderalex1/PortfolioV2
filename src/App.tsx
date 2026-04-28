@@ -1,4 +1,4 @@
-import { Container, Divider } from "@mui/material";
+import { Box, Container, Divider } from "@mui/material";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import ProjectsSection from "./components/ProjectsSection";
@@ -12,15 +12,25 @@ function App() {
     <>
       <Header />
       <Container maxWidth="lg">
-        <HeroSection />
+        <Box id="hero">
+          <HeroSection />
+        </Box>
         <Divider />
-        <ProjectsSection />
+        <Box id="projects">
+          <ProjectsSection />
+        </Box>
         <Divider />
-        <SkillsSection />
+        <Box id="skills">
+          <SkillsSection />
+        </Box>
         <Divider />
-        <AboutSection />
+        <Box id="about">
+          <AboutSection />
+        </Box>
         <Divider />
-        <ContactSection />
+        <Box id="contact">
+          <ContactSection />
+        </Box>
       </Container>
       <Footer />
     </>

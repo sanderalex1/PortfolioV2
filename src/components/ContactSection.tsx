@@ -64,7 +64,11 @@ const ContactSection = () => {
         }}
       >
         <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
-          <Link variant="h5" sx={emailStyles}>
+          <Link
+            variant="h5"
+            sx={emailStyles}
+            href={`mailto:${contact.email}?subject=Hello&body=Hi Alex,`}
+          >
             {contact.email}
           </Link>
           <Box

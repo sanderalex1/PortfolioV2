@@ -3,8 +3,8 @@
 import type { NavItem } from "./navTypes";
 
 export const nav: NavItem[] = [
-  { label: "Work", href: "#work" },
-  { label: "Skills", href: "#skills" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Projects", id: "projects" },
+  { label: "Skills", id: "skills" },
+  { label: "About", id: "about" },
+  { label: "Contact", id: "contact" },
 ];

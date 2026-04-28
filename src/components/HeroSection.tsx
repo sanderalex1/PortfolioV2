@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { hero } from "../content";
 import PingAnimation from "./UI/PingAnimation";
+import { scrollTo } from "../utilities/scrollTo";
 const HeroSection = () => {
   return (
     <Box sx={{ pb: 10, pt: 40, minHeight: "92vh" }}>
@@ -55,6 +56,7 @@ const HeroSection = () => {
               alignItems: "center",
               gap: 0.5,
             }}
+            onClick={() => scrollTo(hero.primaryCta.id)}
           >
             {hero.primaryCta.label}
           </Typography>{" "}
@@ -76,6 +78,7 @@ const HeroSection = () => {
             color: "text.secondary",
             "&:hover": { color: "text.primary", cursor: "pointer" },
           }}
+          onClick={() => scrollTo(hero.secondaryCta.id)}
         >
           {hero.secondaryCta.label}
         </Typography>

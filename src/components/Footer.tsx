@@ -1,5 +1,6 @@
 import { Box, Container, Divider, Typography } from "@mui/material";
 import { hero, site } from "../content";
+import { scrollTo } from "../utilities/scrollTo";
 
 const Footer = () => {
   return (
@@ -23,6 +24,7 @@ const Footer = () => {
         </Box>
         <Typography
           variant="body2"
+          onClick={() => scrollTo("hero")}
           sx={{ "&:hover": { color: "text.primary", cursor: "pointer" } }}
         >
           Back to top ↑

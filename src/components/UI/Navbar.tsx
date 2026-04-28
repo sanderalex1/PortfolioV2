@@ -3,6 +3,7 @@ import { ThemeToggle } from "./ToggleButton";
 import { useEffect, useState } from "react";
 import { nav } from "../../content";
 import type { Theme } from "@mui/material/styles";
+import { scrollTo } from "../../utilities/scrollTo";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -37,7 +38,11 @@ const Navbar = () => {
     <AppBar position="fixed" sx={appBarStyle}>
       <Container maxWidth="lg">
         <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
-          <Typography variant="h6">
+          <Typography
+            variant="h6"
+            onClick={() => scrollTo("hero")}
+            sx={{ cursor: "pointer" }}
+          >
             Alex M
             <Box component="span" sx={{ color: "#E65E19" }}>
               .
@@ -47,6 +52,7 @@ const Navbar = () => {
             {nav.map((c) => (
               <Typography
                 variant="body2"
+                onClick={() => scrollTo(c.id)}
                 sx={{
                   color: "text.secondary",
                   fontWeight: "500",
