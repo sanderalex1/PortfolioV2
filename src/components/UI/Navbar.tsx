@@ -2,6 +2,8 @@ import { AppBar, Box, Container, Toolbar, Typography } from "@mui/material";
 import { ThemeToggle } from "./ToggleButton";
 import { useEffect, useState } from "react";
 import { nav } from "../../content";
+import type { Theme } from "@mui/material/styles";
+
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [opacity, setOpacity] = useState(0);
@@ -18,7 +20,7 @@ const Navbar = () => {
   }, []);
 
   const appBarStyle = {
-    background: (theme) =>
+    background: (theme: Theme) =>
       theme.palette.mode === "light"
         ? `rgba(251, 249, 245, ${opacity})`
         : `rgba(17, 15, 13, ${opacity})`,
