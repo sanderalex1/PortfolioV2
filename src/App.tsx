@@ -19,6 +19,7 @@ function App() {
         <SkillsSection />
         <Divider />
         <AboutSection />
+        <Divider />
         <ContactSection />
       </Container>
       <Footer />

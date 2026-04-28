@@ -3,7 +3,7 @@ import { skills } from "../content";
 
 const SkillsSection = () => {
   return (
-    <Box sx={{ py: 20 }}>
+    <Box sx={{ py: 20, display: "flex", flexDirection: "column", gap: 3 }}>
       <Typography
         variant="body1"
         sx={{
@@ -15,20 +15,33 @@ const SkillsSection = () => {
       >
         {skills.eyebrow}
       </Typography>
-      <Typography variant="h3" sx={{ fontWeight: 300, pt: 4 }}>
+      <Typography variant="h3" sx={{ fontWeight: 300 }}>
         {skills.title}
       </Typography>
-      <Typography variant="body1" sx={{ color: "text.secondary", pt: 4 }}>
+      <Typography
+        variant="h5"
+        sx={{
+          color: "text.secondary",
+          fontWeight: 300,
+          fontFamily: '"Inter", ui-sans-serif, system-ui, sans-serif',
+        }}
+      >
         {skills.description}
       </Typography>
       <Grid container sx={{ pt: 8 }}>
         {skills.items.map((i) => (
           <Grid
-            size={{ xs: 6, sm: 4, md: 3 }}
+            size={{ xs: 5, sm: 5, md: 3 }}
             sx={{ border: "1px solid", borderColor: "divider", p: 4 }}
           >
             <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
-              <Typography variant="h5" sx={{ fontWeight: 300 }}>
+              <Typography
+                variant="h5"
+                sx={{
+                  display: { xs: "none", sm: "inline-block" },
+                  fontWeight: 300,
+                }}
+              >
                 {i.name}
               </Typography>
               <Box component="img" src={i.image} sx={{ height: 50 }} />
