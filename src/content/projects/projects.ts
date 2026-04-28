@@ -13,6 +13,7 @@ export const projects: Project[] = [
     tags: ["React", "TypeScript", "Socket.io", "Express", "PostgreSQL"],
     image: `${import.meta.env.BASE_URL}songGuessingGame.png`,
     imageAlt: "Song guessing game landing page image",
+    url: "https://github.com/sanderalex1/SongGuessingGame",
     featured: true,
   },
   {
@@ -25,6 +26,7 @@ export const projects: Project[] = [
     tags: ["React", "TypeScript", "MUI", "Express", "PostgreSQL"],
     image: `${import.meta.env.BASE_URL}JobTracker.png`,
     imageAlt: "Job Tracker landing page image",
+    url: "https://github.com/sanderalex1/jobTracker",
     featured: true,
   },
   {
@@ -37,6 +39,7 @@ export const projects: Project[] = [
     tags: ["React", "JavaScript", "MUI", "React Router"],
     image: `${import.meta.env.BASE_URL}RecipeBook.png`,
     imageAlt: "Recipe book landing page image",
+    url: "https://github.com/sanderalex1/recipeBook",
     featured: true,
   },
   {
@@ -49,6 +52,7 @@ export const projects: Project[] = [
     tags: ["React", "JavaScript", "Vite"],
     image: `${import.meta.env.BASE_URL}MemoryGame.png`,
     imageAlt: "Memory game landing page image",
+    url: "https://github.com/sanderalex1/MemoryGame",
     featured: true,
   },
 ];
