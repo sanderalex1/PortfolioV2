@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import type { Project } from "../../../content/projects/projectsTypes";
-import CustomChip from "../CustomChip";
+import SkillChip from "../SkillChip";
 
 const cardAreaStyle = {
   height: "100%",
@@ -100,7 +100,7 @@ const ProjectCard = ({ card }: { card: Project }) => {
             }}
           >
             {card.tags.map((t) => (
-              <CustomChip key={t} label={t} />
+              <SkillChip key={t} label={t} />
             ))}
           </Box>
         </CardContent>

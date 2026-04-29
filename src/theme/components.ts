@@ -15,4 +15,11 @@ export const components: Components<Theme> = {
   MuiTextField: {
     defaultProps: { variant: "outlined", size: "small" },
   },
+  MuiDivider: {
+    styleOverrides: {
+      root: {
+        borderBottomWidth: 2,
+      },
+    },
+  },
 };

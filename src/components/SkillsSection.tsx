@@ -31,14 +31,13 @@ const SkillsSection = () => {
       <Grid container sx={{ pt: 8, justifyContent: "center" }}>
         {skills.items.map((i) => (
           <Grid
-            size={{ xs: 5, sm: 5, md: 3 }}
+            size={{ xs: 10, sm: 5, md: 3 }}
             sx={{ border: "1px solid", borderColor: "divider", p: 4 }}
           >
             <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
               <Typography
                 variant="h5"
                 sx={{
-                  display: { xs: "none", sm: "inline-block" },
                   fontWeight: 300,
                 }}
               >

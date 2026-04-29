@@ -14,9 +14,11 @@ export const about: About = {
     currently: "Independent — freelance & collaborations",
     basedIn: "Kristiansund, Norway",
     toolkit: [
+      "JavaScript",
       "TypeScript",
+      "HTML",
+      "CSS",
       "React",
-      "Next.js",
       "Node.js",
       "Tailwind CSS",
       "PostgreSQL",

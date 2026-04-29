@@ -5,7 +5,13 @@ import { scrollTo } from "../utilities/scrollTo";
 const HeroSection = () => {
   return (
     <Box sx={{ pb: 10, pt: 40, minHeight: "92vh" }}>
-      <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          gap: 2,
+        }}
+      >
         <PingAnimation />
         <Typography
           variant="body2"

@@ -15,7 +15,7 @@ export const getPalette = (mode: PaletteMode): PaletteOptions => ({
     contrastText: mode === "light" ? "hsl(40, 20%, 98%)" : "hsl(40, 20%, 96%)",
   },
   background: {
-    default: mode === "light" ? "hsl(40, 20%, 98%)" : "hsl(30, 13%, 6%)",
+    default: mode === "light" ? "hsl(30, 50%, 96%)" : "hsl(30, 13%, 6%)",
     paper: mode === "light" ? "hsl(40, 20%, 98%)" : "hsl(20, 14%, 8%)",
   },
   text: {
@@ -24,3 +24,20 @@ export const getPalette = (mode: PaletteMode): PaletteOptions => ({
   },
   divider: mode === "light" ? "hsl(30, 10%, 88%)" : "hsl(24, 8%, 18%)",
 });
+
+export const skillColors: Record<string, string> = {
+  JavaScript: "#F7DF1E",
+  TypeScript: "#3178C6",
+  React: "#61DAFB",
+  HTML: "#E34F26",
+  CSS: "#1572B6",
+  "Tailwind CSS": "#06B6D4",
+  "Node.js": "#339933",
+  PostgreSQL: "#4169E1",
+  MUI: "#007FFF",
+  Vite: "#646CFF",
+  "React Router": "#CA4245",
+  Express: "#68A063",
+  "Socket.io": "#010101",
+  Figma: "#F24E1E",
+};

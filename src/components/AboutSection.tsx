@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { about } from "../content";
-import CustomChip from "./UI/CustomChip";
+import SkillChip from "./UI/SkillChip";
 import { PanelRow } from "./UI/PanelRow";
 
 const AboutSection = () => {
@@ -17,7 +17,13 @@ const AboutSection = () => {
       >
         {about.eyebrow}
       </Typography>
-      <Box sx={{ display: "flex", gap: 4 }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          gap: 4,
+        }}
+      >
         <Box
           sx={{
             display: "flex",
@@ -58,7 +64,7 @@ const AboutSection = () => {
           <PanelRow label="toolkit">
             <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
               {about.panel.toolkit.map((t) => (
-                <CustomChip key={t} label={t} />
+                <SkillChip key={t} label={t} />
               ))}
             </Box>
           </PanelRow>

@@ -16,9 +16,8 @@ const Footer = () => {
         }}
       >
         <Box sx={{ display: "flex", gap: 1 }}>
-          <Typography variant="body2">© {site.copyrightYear}</Typography>
           <Typography variant="body2">
-            {hero.firstName} {hero.lastName}.
+            ©{hero.firstName} {hero.lastName}.
           </Typography>
           <Typography variant="body2">Built in {site.builtYear}.</Typography>
         </Box>

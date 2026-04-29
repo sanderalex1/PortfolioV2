@@ -39,7 +39,13 @@ const ContactSection = () => {
       >
         {contact.eyebrow}
       </Typography>
-      <Box sx={{ display: "flex", gap: 2 }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", lg: "row" },
+          gap: 2,
+        }}
+      >
         <Typography
           variant="h1"
           sx={{
@@ -57,6 +63,8 @@ const ContactSection = () => {
       <Box
         sx={{
           display: "flex",
+          flexDirection: { xs: "column", lg: "row" },
+          gap: 10,
           justifyContent: "space-between",
           "&:hover .arrow": {
             transform: "translateX(4px)",

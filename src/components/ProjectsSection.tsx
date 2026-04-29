@@ -20,7 +20,7 @@ const ProjectsSection = () => {
             letterSpacing: "0.2rem",
           }}
         >
-          01 — Selected Work
+          01 — Selected Projects
         </Typography>
         <Typography variant="body1">{projects.length} projects</Typography>
       </Box>
