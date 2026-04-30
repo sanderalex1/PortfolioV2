@@ -35,6 +35,7 @@ const SkillsSection = () => {
             sx={{ border: "1px solid", borderColor: "divider", p: 4 }}
           >
             <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
+              <Box component="img" src={i.image} sx={{ height: 50 }} />
               <Typography
                 variant="h5"
                 sx={{
@@ -43,7 +44,6 @@ const SkillsSection = () => {
               >
                 {i.name}
               </Typography>
-              <Box component="img" src={i.image} sx={{ height: 50 }} />
             </Box>
           </Grid>
         ))}
