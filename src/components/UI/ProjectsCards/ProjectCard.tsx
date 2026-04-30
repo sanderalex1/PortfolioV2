@@ -14,6 +14,11 @@ const cardAreaStyle = {
   display: "flex",
   flexDirection: "column",
   alignItems: "stretch",
+  filter: "grayscale(100%)",
+  "&:hover": {
+    filter: "grayscale(0%)",
+    transition: "transform 0.5s ease",
+  },
 
   "&:hover .img": {
     transform: "scale(1.05)",
@@ -46,8 +51,8 @@ const ProjectCard = ({ card }: { card: Project }) => {
           sx={{
             objectFit: "contain",
             border: "1px solid",
+
             borderColor: "divider",
-            transition: "transform 0.3s ease",
           }}
         />
         <CardContent
