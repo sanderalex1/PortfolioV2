@@ -6,7 +6,13 @@ import TiltCard from "./UI/TiltCard";
 
 const HeroSection = () => {
   return (
-    <Box sx={{ pb: 30, pt: 20, minHeight: "92vh" }}>
+    <Box
+      sx={{
+        pb: { xs: 10, sm: 15, md: 30 },
+        pt: { xs: 10, sm: 15, md: 20 },
+        minHeight: "92vh",
+      }}
+    >
       <TiltCard>
         <Box
           sx={{
@@ -60,7 +66,7 @@ const HeroSection = () => {
             <Typography
               variant="body1"
               sx={{
-                fontSize: { xs: "0.725rem", md: "1rem" },
+                fontSize: { xs: "0.75rem", md: "1rem" },
                 cursor: "pointer",
                 borderBottom: "1px solid",
                 borderColor: "text.primary",

@@ -49,6 +49,7 @@ const AboutSection = () => {
                   fontWeight: 300,
                   lineHeight: 1.8,
                   fontFamily: '"Inter", ui-sans-serif, system-ui, sans-serif',
+                  minWidth: { md: "558px", lg: "700px" },
                 }}
               >
                 {isMobile ? (

@@ -7,7 +7,7 @@ export const hero: Hero = {
   lastName: "M",
   intro:
     "I design and build fast, accessible web products with care for typography, performance, and the small details that make software feel inevitable.",
-  primaryCta: { label: "View selected projects", id: "projects" },
+  primaryCta: { label: "Selected projects", id: "projects" },
   secondaryCta: { label: "Get in touch", id: "contact" },
   availability: "Available for work — Jul 2026",
 };
