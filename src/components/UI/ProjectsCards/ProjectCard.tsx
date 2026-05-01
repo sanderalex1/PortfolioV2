@@ -17,12 +17,9 @@ const cardAreaStyle = {
   filter: "grayscale(100%)",
   "&:hover": {
     filter: "grayscale(0%)",
-    transition: "transform 0.5s ease",
+    transition: "0.5s ease",
   },
 
-  "&:hover .img": {
-    transform: "scale(1.05)",
-  },
   "&:hover .arrow": {
     opacity: 1,
     transform: "translateX(4px)",

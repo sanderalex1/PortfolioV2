@@ -22,6 +22,10 @@ export const getPalette = (mode: PaletteMode): PaletteOptions => ({
     primary: mode === "light" ? "hsl(20, 14%, 8%)" : "hsl(40, 20%, 96%)",
     secondary: mode === "light" ? "hsl(25, 8%, 42%)" : "hsl(30, 8%, 62%)",
   },
+  accentButton: {
+    primary: mode === "light" ? "black" : "white",
+    secondary: mode === "light" ? "white" : "black",
+  },
   divider: mode === "light" ? "hsl(30, 10%, 88%)" : "hsl(24, 8%, 18%)",
 });
 

@@ -55,6 +55,7 @@ const Navbar = () => {
                 onClick={() => scrollTo(c.id)}
                 sx={{
                   color: "text.secondary",
+                  display: { xs: "none", sm: "none", md: "block" },
                   fontWeight: "500",
                   cursor: "pointer",
                   "&:hover": { color: "text.primary" },

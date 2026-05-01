@@ -1,9 +1,13 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { about } from "../content";
 import SkillChip from "./UI/SkillChip";
 import { PanelRow } from "./UI/PanelRow";
+import TextType from "./UI/TextType/TextType";
 
 const AboutSection = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <Box sx={{ display: "flex", flexDirection: "column", gap: 4, py: 20 }}>
       <Typography
@@ -47,7 +51,19 @@ const AboutSection = () => {
                   fontFamily: '"Inter", ui-sans-serif, system-ui, sans-serif',
                 }}
               >
-                {p}
+                {isMobile ? (
+                  p
+                ) : (
+                  <TextType
+                    text={p}
+                    as="span"
+                    typingSpeed={30}
+                    loop={false}
+                    showCursor={false}
+                    startOnVisible={true}
+                    initialDelay={i * about.paragraphs[i - 1]?.length * 30 || 0}
+                  />
+                )}
               </Typography>
             ))}
           </Box>
