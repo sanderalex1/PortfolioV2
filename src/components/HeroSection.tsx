@@ -94,7 +94,8 @@ const HeroSection = () => {
             sx={{
               display: "flex",
               gap: 1,
-              border: "1px solid black",
+              border: "1px solid",
+              borderColor: "text.primary",
               p: 1.2,
               alignItems: "center",
               color: "accentButton.primary",
