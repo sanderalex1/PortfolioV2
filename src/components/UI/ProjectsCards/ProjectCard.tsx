@@ -14,7 +14,7 @@ const cardAreaStyle = {
   display: "flex",
   flexDirection: "column",
   alignItems: "stretch",
-  filter: "grayscale(100%)",
+  filter: { sx: "none", md: "grayscale(100%)" },
   "&:hover": {
     filter: "grayscale(0%)",
     transition: "0.5s ease",

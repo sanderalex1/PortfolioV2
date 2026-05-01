@@ -46,6 +46,9 @@ const HeroSection = () => {
       <Box sx={{ mt: 5, display: "flex", gap: 4, alignItems: "center" }}>
         <Box
           sx={{
+            display: "flex",
+            gap: 1,
+            alignItems: "center",
             "&:hover .arrow": {
               transform: "translateX(4px)",
             },
@@ -54,6 +57,7 @@ const HeroSection = () => {
           <Typography
             variant="body1"
             sx={{
+              fontSize: { xs: "0.725rem", md: "1rem" },
               cursor: "pointer",
               borderBottom: "1px solid",
               borderColor: "text.primary",
