@@ -26,7 +26,7 @@ export const getPalette = (mode: PaletteMode): PaletteOptions => ({
     primary: mode === "light" ? "black" : "white",
     secondary: mode === "light" ? "white" : "black",
   },
-  divider: mode === "light" ? "hsl(30, 10%, 88%)" : "hsl(24, 8%, 18%)",
+  divider: mode === "light" ? "rgb(204, 200, 196)" : "hsl(24, 8%, 18%)",
 });
 
 export const skillColors: Record<string, string> = {

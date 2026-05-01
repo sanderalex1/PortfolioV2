@@ -48,7 +48,7 @@ export const projects: Project[] = [
     title: "Memory Game",
     year: 2025,
     description:
-      "A classic card-flipping memory game built with vanilla React adn JavaScript.",
+      "A classic card-flipping memory game built with vanilla React and JavaScript.",
     tags: ["React", "JavaScript", "Vite"],
     image: `${import.meta.env.BASE_URL}MemoryGame.png`,
     imageAlt: "Memory game landing page image",
