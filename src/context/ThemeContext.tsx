@@ -1,7 +1,8 @@
-import { createContext, useContext, useMemo, useState } from "react";
+import { createContext, useContext, useMemo } from "react";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 import { createAppTheme } from "../theme";
 import type { PaletteMode } from "@mui/material/styles";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 interface ThemeContextValue {
   mode: PaletteMode;
@@ -16,7 +17,7 @@ const ThemeContext = createContext<ThemeContextValue>({
 export const useThemeMode = () => useContext(ThemeContext);
 
 export function AppThemeProvider({ children }: { children: React.ReactNode }) {
-  const [mode, setMode] = useState<PaletteMode>("light");
+  const [mode, setMode] = useLocalStorage<PaletteMode>("theme", "light");
 
   const toggleMode = () =>
     setMode((prev) => (prev === "light" ? "dark" : "light"));
